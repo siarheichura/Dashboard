@@ -1,0 +1,30 @@
+@keyframes notification {
+    from {
+        transform: rotate(15deg);
+    }
+
+    50% {
+        transform: rotate(-15deg);
+    }
+
+    to {
+        transform: rotate(15deg);
+    }
+}
+
+@keyframes arrow {
+    from {
+        transform: scale(1.05);
+        filter: brightness(150%);
+    }
+
+    50% {
+        transform: scale(1);
+        filter: none;
+    }
+
+    to {
+        transform: scale(1.05);
+        filter: brightness(150%);
+    }
+}

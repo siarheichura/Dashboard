@@ -1,0 +1,39 @@
+.menu-btn {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    top: calc(50% - 15px);
+    right: 20px;
+    width: 20px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.menu-btn__burger {
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    height: 4px;
+    width: 20px;
+    background: #CACACA;
+}
+
+.menu-btn__burger::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    height: 4px;
+    width: 20px;
+    background: #CACACA;
+}
+
+.menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    height: 4px;
+    width: 20px;
+    background: #CACACA;
+}

@@ -1,0 +1,65 @@
+.card {
+    @include card-style;
+    @include people-card-style;
+    grid-column: span 7;
+
+    &__title {
+        @include card-title;
+        position: relative;
+        grid-area: title;
+
+        &:after {
+            position: absolute;
+            top: 5px;
+            right: 0;
+            width: 26px;
+            height: 8px;
+            content: '';
+            background: url(../../img/icons/content/dots.svg) no-repeat center center;
+            cursor: pointer;
+        }
+    }
+
+    &__value {
+        grid-area: value;
+        align-self: end;
+        font-size: 20px;
+        font-weight: 300px;
+    }
+
+    &__rating {
+        position: relative;
+        margin-right: 16px;
+        grid-area: rating;
+        align-self: end;
+        justify-self: end;
+        font-size: 20px;
+        font-weight: 300px;
+
+        &--positiv:after {
+            position: absolute;
+            top: 0;
+            right: -16px;
+            width: 12px;
+            height: 20px;
+            content: '';
+            background: url(../../img/icons/content/arrow-up.svg) no-repeat center center;
+            animation-name: arrow;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+
+        &--negativ:after {
+            position: absolute;
+            top: 0;
+            right: -16px;
+            width: 12px;
+            height: 20px;
+            content: '';
+            background: url(../../img/icons/content/arrow-down.svg) no-repeat center center;
+            animation-name: arrow;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+    }
+}

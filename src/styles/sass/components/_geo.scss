@@ -1,0 +1,29 @@
+.geo {
+    @include card-style;
+    grid-column: span 8;
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 40px);
+    grid-template-rows: 30px 1fr;
+    grid-gap: 20px;
+    // grid-area: geo;
+
+    &__title {
+        @include card-title;
+    }
+
+    &__option {
+        font-size: 12px;
+        font-weight: 500;
+
+        &--inert {
+            color: #979797;
+            font-weight: 400;
+        }
+    }
+
+    &__img {
+        grid-column: span 3;
+    }
+
+
+}

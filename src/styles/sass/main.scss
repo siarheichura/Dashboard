@@ -1,0 +1,22 @@
+// Base
+
+@import 'config/reset';
+@import 'config/variables';
+@import 'config/base';
+@import 'config/mixins';
+@import 'config/animations';
+
+// Components
+
+@import 'components/nav';
+@import 'components/header';
+@import 'components/audience';
+@import 'components/gender';
+@import 'components/geo';
+@import 'components/card';
+@import 'components/device';
+@import 'components/burger';
+
+// Media
+
+@import 'config/media';

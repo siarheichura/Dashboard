@@ -1,0 +1,50 @@
+.audience {
+    @include card-style;
+    grid-column: 1 / span 15;
+    display: grid;
+    grid-template-rows: 28px 1fr;
+    grid-gap: 24px;
+
+    &__heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        @include card-title;
+    }
+
+    &__date {
+        position: relative;
+        font-weight: 300;
+        font-size: 12px;
+
+        &:after {
+            @include dropdown;
+            top: 3px;
+            right: -16px;
+        }
+    }
+
+    .checkbox-group {
+        display: flex;
+        align-items: center;
+
+        &__check {
+            height: 16px;
+            width: 16px;
+            margin-right: 5px;
+        }
+
+        &__name {
+            margin-right: 10px;
+            font-size: 12px;
+            font-weight: 300px;
+        }
+    }
+
+    .audience__img {
+        justify-self: center;
+    }
+}

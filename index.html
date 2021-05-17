@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/css/main.min.css">
+    <title>Dashboard</title>
+</head>
+<body> 
+    <div class="app">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="nav__logo-link">
+                    <img src="src/img/logo/logo.png" alt="VK logo" class="nav__logo-img">
+                </a>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">  
+                            <svg class="nav__icon">
+                                <use xlink:href="src\img\icons\nav\sprite.svg#home"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">  
+                            <svg class="nav__icon">
+                                <use xlink:href="src\img\icons\nav\sprite.svg#news"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">  
+                            <svg class="nav__icon">
+                                <use xlink:href="src\img\icons\nav\sprite.svg#friends"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">  
+                            <svg class="nav__icon">
+                                <use xlink:href="src\img\icons\nav\sprite.svg#message"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">  
+                            <svg class="nav__icon">
+                                <use xlink:href="src\img\icons\nav\sprite.svg#music"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav__item nav__item--active">
+                        <a href="#" class="nav__link">  
+                            <svg class="nav__icon nav__icon--active">
+                                <use xlink:href="src\img\icons\nav\sprite.svg#statistics"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">  
+                            <svg class="nav__icon">
+                                <use xlink:href="src\img\icons\nav\sprite.svg#settings"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <label class="theme-switch">
+                    <input type="checkbox" class="theme-switch__input">
+                    <span class="theme-switch__check"></span>
+                </label>
+                <div class="menu-btn">
+                    <span class="menu-btn__burger"></span>
+                </div>
+            </nav>
+
+            <div class="main">
+                <header class="header">
+                    <div class="header__heading">
+                        <h1 class="header__title">Statistics</h1>
+                        <form class="header__form">
+                            <input type="submit" class="header__button" value="">
+                            <input type="search" placeholder="Search" class="header__input">
+                        </form>
+                        <img src="src/img/icons/header/notifications.svg" alt="notifications" class="header__notification">
+                    </div>
+
+                    <div class="header__user">
+                        <h2 class="header__name">Anya</h2>
+                        <img src="src/img/icons/header/avatar.svg" alt="users avatar" class="header__avatar">
+                    </div>
+                </header>
+
+                <div class="content">
+                    <div class="card">
+                        <h2 class="card__title">Friends</h2>
+                        <p class="card__value">271 people</p>
+                        <p class="card__rating card__rating--positiv">+ 0,7%</p>
+                    </div>
+                    <div class="card">
+                        <h2 class="card__title">Unique visitiors</h2>
+                        <p class="card__value">69 people</p>
+                        <p class="card__rating card__rating--negativ">-1,7%</p>
+                    </div>
+                    <div class="card">
+                        <h2 class="card__title">Followers</h2>
+                        <p class="card__value">288 people</p>
+                        <p class="card__rating card__rating--positiv">+ 1%</p>
+                    </div>
+                    <div class="audience">
+                        <div class="audience__heading">
+                            <h2 class="audience__title">Audience reach</h2>
+                            <p class="audience__date">31/01/2020 – 06/02/2020</p>
+                            <label class="checkbox-group">
+                                <input type="checkbox" checked class="checkbox-group__check">
+                                <span class="checkbox-group__name">Total</span>
+                                <input type="checkbox" class="checkbox-group__check">
+                                <span class="checkbox-group__name">Follower</span>
+                            </label>
+                        </div>
+                        <img src="src/img/icons/content/graph.png" alt="graph" class="audience__img">
+                    </div>
+                    <div class="device">
+                        <h2 class="device__title">Reach by device</h2>
+                        <img src="src/img/icons/content/pie.png" alt="pie" class="device__img">
+                        <div class="device__variants">
+                            <p class="device__variant device__variant--desktop">Desktop</p>
+                            <p class="device__variant device__variant--mobile">Mobile views</p>
+                        </div>
+                    </div>
+                    <div class="gender">
+                        <h2 class="gender__title">Gender / Age</h2>
+                        <div class="gender__variants">
+                            <p class="gender__variant gender__variant--women">women</p>
+                            <p class="gender__variant gender__variant--men">men</p>
+                        </div>
+                        <img src="src/img/icons/content/bars.png" alt="" class="gender__img">
+                    </div>
+                    <div class="geo">
+                        <h2 class="geo__title">Geo</h2>
+                        <p class="geo__option">Country</p>
+                        <p class="geo__option geo__option--inert">City</p>
+                        <img src="src/img/icons/content/geo.png" alt="" class="geo__img">
+                    </div>
+                </div>
+            </div>     
+        </div>
+    </div>
+</body>
+</html>

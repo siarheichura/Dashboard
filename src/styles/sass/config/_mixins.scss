@@ -1,0 +1,29 @@
+@mixin dropdown {
+    position: absolute;
+    width: 12px;
+    height: 6px;
+    content: '';
+    background: url(../../img/icons/header/dropdown.svg) no-repeat center center;
+    cursor: pointer;
+}
+
+@mixin card-style {
+    padding: 23px;
+    background: $blocks-color;
+    border: 1px solid #4D4D4D;
+    border-radius: 13px;
+}
+
+@mixin people-card-style { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:    "title title"
+                            "value rating";
+    min-width: 341px;    
+}
+
+@mixin card-title {
+    font-weight: 500;  
+    font-size: 20px;  
+}
