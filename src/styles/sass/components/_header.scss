@@ -1,32 +1,27 @@
 .header {
-    grid-area: header;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex;
 
     &__heading {
         width: 372px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include flex;
     }
 
     &__title {
         font-size: 30px;
-        font-weight: 500;
+        font-weight: $bold-text;
     }
 
     &__form {
+        @include flex;
         height: 32px;
         padding-left: 18px;
-        display: flex;
-        align-items: center;
-        border: 1px solid #4C4C4C;
+        border: $border;
         border-radius: 8px;
     }
 
     &__button {
         width: 12px;
+        height: 16px;
         margin-right: 11px;
         border: none;
         background: url(../../img/icons/header/search-btn.svg) no-repeat center center;
@@ -35,8 +30,8 @@
     &__input {
         width: 102px;
         font-size: 12px;
-        font-weight: 300;
-        color: #979797;
+        font-weight: $regular-text;
+        color: $value-color;
         background: none;
         border: none;
     }
@@ -45,18 +40,15 @@
         cursor: pointer;
 
         &:hover {
-            animation-name: notification;
-            animation-duration: 0.2s;
-            animation-iteration-count: 2;
+            animation: notification 0.2s 2;
         }
     }
 
     &__user {
-        display: flex;
-        align-items: center;
+        @include flex;
         position: relative;
 
-        :after {
+        &:after {
             @include dropdown;
             left: 115px;
             top: 25px;
@@ -66,7 +58,7 @@
     &__name {
         margin-right: 11px;
         font-size: 20px;
-        font-weight: 400;
+        font-weight: $medium-text;
     }
 
     &__avatar {

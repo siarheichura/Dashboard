@@ -5,49 +5,34 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 30px 1fr;
     grid-gap: 21px;
+    min-width: 674px;
 
     &__title {
         @include card-title;
     }
 
     &__variants {
+        @include flex;
         align-self: center;
         justify-self: end;
-        display: flex;
     }
 
     &__variant {
         position: relative;
         margin-bottom: 13px;
         font-size: 12px;
-        font-weight: 400;
+        font-weight: $medium-text;
 
         &--women {
             margin-right: 39px;
         }
 
         &--women:before {
-            position: absolute;
-            top: -3px;
-            left: -23px;
-            width: 16px;
-            height: 16px;
-            content: '';
-            background: #E786D7;
-            border: 1px solid #E786D7;
-            border-radius: 5px;
+            @include diagram-value($pink-color);
         }
 
         &--men:before {
-            position: absolute;
-            top: -3px;
-            left: -23px;
-            width: 16px;
-            height: 16px;
-            content: '';
-            background: #7F7FD5;
-            border: 1px solid #7F7FD5;
-            border-radius: 5px;
+            @include diagram-value($pink-color);
         }
     }
 

@@ -1,3 +1,15 @@
+@mixin card-style {
+    padding: 23px;
+    background: $card-color;
+    border: $border;
+    border-radius: 13px;
+}
+
+@mixin card-title {
+    font-weight: 500;  
+    font-size: 20px;  
+}
+
 @mixin dropdown {
     position: absolute;
     width: 12px;
@@ -7,23 +19,30 @@
     cursor: pointer;
 }
 
-@mixin card-style {
-    padding: 23px;
-    background: $blocks-color;
-    border: 1px solid #4D4D4D;
-    border-radius: 13px;
+@mixin flex($justify-content: space-between) {
+    display: flex;
+    align-items: center;
+    justify-content: $justify-content;
 }
 
-@mixin people-card-style { 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:    "title title"
-                            "value rating";
-    min-width: 341px;    
+@mixin arrows($background: url(../../img/icons/content/arrow-up.svg) no-repeat center center) {
+    position: absolute;
+    top: 0;
+    right: -16px;
+    width: 12px;
+    height: 20px;
+    content: '';
+    background: $background;
+    animation: arrow 1s infinite;  
 }
 
-@mixin card-title {
-    font-weight: 500;  
-    font-size: 20px;  
+@mixin diagram-value($background) {
+    position: absolute;
+    top: -3px;
+    left: -25px;
+    width: 18px;
+    height: 18px;
+    content: '';
+    background: $background;
+    border-radius: 5px;
 }

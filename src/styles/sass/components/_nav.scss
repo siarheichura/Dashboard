@@ -1,12 +1,12 @@
 .nav {
+    position: relative;
     z-index: 1;
     padding: 50px 0;
     display: grid;
-    grid-area: nav;
     grid-template-rows: 1fr 430px 1fr;
     justify-items: center;
-    background: $blocks-color;
-    border: 1px solid #4D4D4D;
+    background: $card-color;
+    border: 1px solid $border-color;
     border-radius: 14px 0 0 14px;
 
     &__logo-link {
@@ -18,7 +18,7 @@
         transition: 0.4s;
 
         &:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
             filter: drop-shadow(0 0 9px rgba(255, 255, 255, 0.334));
         }
     }
@@ -38,7 +38,7 @@
             content: '';
             width: 4px;
             height: 50px;
-            background: $icons-color;
+            background: $violet-color;
             border-radius: 0 3px 3px 0;  
         }
     }
@@ -46,20 +46,19 @@
     &__icon {
         width: 25px;
         height: 25px;
-        fill: #CACACA;
+        fill: $text-color;
 
         &:hover {
-            fill: $icons-color;
+            fill: $violet-color;
         }
 
         &--active {
-            fill: $icons-color;
+            fill: $violet-color;
         }
     }
 }
 
 .theme-switch {
-    margin: 0 auto;
     align-self: end;
 
     &__input {
@@ -71,7 +70,7 @@
         display: block;
         width: 60px;
         height: 30px;
-        border: 0.5px solid $icons-color;
+        border: 0.5px solid $violet-color;
         border-radius: 50px;
         cursor: pointer;
         overflow: hidden;
@@ -79,7 +78,7 @@
     }
 
     &__input:checked ~ &__check {
-        background-color: $icons-color;
+        background-color: $violet-color;
     }
 
     &__check:before {
@@ -89,7 +88,7 @@
         width: 20px;
         height: 20px;
         content: '';
-        background: url(../../img/icons/nav/moon.svg) no-repeat center center, #7F7FD5;
+        background: url(../../img/icons/nav/moon.svg) no-repeat center center, $violet-color;
         border-radius: 50%;
         transition: 0.4s;
     }

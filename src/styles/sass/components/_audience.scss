@@ -1,14 +1,14 @@
 .audience {
+    overflow-x: auto;
     @include card-style;
-    grid-column: 1 / span 15;
+    grid-column: span 15;
     display: grid;
     grid-template-rows: 28px 1fr;
     grid-gap: 24px;
+    min-width: 768px;
 
     &__heading {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include flex;
     }
 
     &__title {
@@ -17,7 +17,7 @@
 
     &__date {
         position: relative;
-        font-weight: 300;
+        font-weight: $regular-text;
         font-size: 12px;
 
         &:after {
@@ -28,8 +28,7 @@
     }
 
     .checkbox-group {
-        display: flex;
-        align-items: center;
+        @include flex;
 
         &__check {
             height: 16px;

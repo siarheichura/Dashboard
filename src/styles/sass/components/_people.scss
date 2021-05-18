@@ -1,0 +1,49 @@
+.people {
+    grid-column: span 7;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    min-width: 341px;
+    @include card-style;
+
+    &__title {
+        @include card-title;
+        position: relative;
+        grid-column: span 2;
+
+        &:after {
+            position: absolute;
+            top: 5px;
+            right: 0;
+            width: 26px;
+            height: 8px;
+            content: '';
+            background: url(../../img/icons/content/dots.svg) no-repeat center center;
+            cursor: pointer;
+        }
+    }
+
+    &__value {
+        align-self: end;
+        font-size: 20px;
+        font-weight: $regular-text
+    }
+
+    &__rating {
+        position: relative;
+        margin-right: 16px;
+        align-self: end;
+        justify-self: end;
+        font-size: 20px;
+        font-weight: $regular-text;
+        color: $value-color;
+
+        &--positiv:after {
+            @include arrows;
+        }
+
+        &--negativ:after {
+            @include arrows(url(../../img/icons/content/arrow-down.svg) no-repeat center center);
+        }
+    }
+}

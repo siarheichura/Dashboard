@@ -10,8 +10,8 @@
     <title>Dashboard</title>
 </head>
 <body> 
-    <div class="app">
-        <div class="container">
+    <div class="wrapper">
+        <div class="app">
             <nav class="nav">
                 <a href="#" class="nav__logo-link">
                     <img src="src/img/logo/logo.png" alt="VK logo" class="nav__logo-img">
@@ -94,20 +94,20 @@
                 </header>
 
                 <div class="content">
-                    <div class="card">
-                        <h2 class="card__title">Friends</h2>
-                        <p class="card__value">271 people</p>
-                        <p class="card__rating card__rating--positiv">+ 0,7%</p>
+                    <div class="people">
+                        <h2 class="people__title">Friends</h2>
+                        <p class="people__value">271 people</p>
+                        <p class="people__rating people__rating--positiv">+ 0,7%</p>
                     </div>
-                    <div class="card">
-                        <h2 class="card__title">Unique visitiors</h2>
-                        <p class="card__value">69 people</p>
-                        <p class="card__rating card__rating--negativ">-1,7%</p>
+                    <div class="people">
+                        <h2 class="people__title">Unique visitiors</h2>
+                        <p class="people__value">69 people</p>
+                        <p class="people__rating people__rating--negativ">- 1,7%</p>
                     </div>
-                    <div class="card">
-                        <h2 class="card__title">Followers</h2>
-                        <p class="card__value">288 people</p>
-                        <p class="card__rating card__rating--positiv">+ 1%</p>
+                    <div class="people">
+                        <h2 class="people__title">Followers</h2>
+                        <p class="people__value">288 people</p>
+                        <p class="people__rating people__rating--positiv">+ 1%</p>
                     </div>
                     <div class="audience">
                         <div class="audience__heading">
@@ -139,10 +139,57 @@
                         <img src="src/img/icons/content/bars.png" alt="" class="gender__img">
                     </div>
                     <div class="geo">
-                        <h2 class="geo__title">Geo</h2>
-                        <p class="geo__option">Country</p>
-                        <p class="geo__option geo__option--inert">City</p>
-                        <img src="src/img/icons/content/geo.png" alt="" class="geo__img">
+                        <div class="geo__heading">
+                            <h2 class="geo__title">Geo</h2>
+                            <div class="geo__options">
+                                <p class="geo__option">Country</p>
+                                <p class="geo__option geo__option--inert">City</p>
+                            </div>
+                        </div>
+                        <div class="geo__body">
+                            <div class="geo__item">
+                                <div class="geo__text">
+                                    <p class="geo__item-name">Russia</p>
+                                    <p class="geo__item-percent">94%</p>
+                                </div>
+                                <span class="geo__progress geo__progress--russia"></span>
+                            </div>
+                            <div class="geo__item">
+                                <div class="geo__text">
+                                    <p class="geo__item-name">China</p>
+                                    <p class="geo__item-percent">0,26%</p>
+                                </div>
+                                <span class="geo__progress geo__progress--china"></span>
+                            </div>
+                            <div class="geo__item">
+                                <div class="geo__text">
+                                    <p class="geo__item-name">Ukraine</p>
+                                    <p class="geo__item-percent">0,20%</p>
+                                </div>
+                                <span class="geo__progress geo__progress--ukraine"></span>
+                            </div>
+                            <div class="geo__item">
+                                <div class="geo__text">
+                                    <p class="geo__item-name">USA</p>
+                                    <p class="geo__item-percent">0,20%</p>
+                                </div>
+                                <span class="geo__progress geo__progress--usa"></span>
+                            </div>
+                            <div class="geo__item">
+                                <div class="geo__text">
+                                    <p class="geo__item-name">Mongolia</p>
+                                    <p class="geo__item-percent">0,13%</p>
+                                </div>
+                                <span class="geo__progress geo__progress--mongolia"></span>
+                            </div>
+                            <div class="geo__item">
+                                <div class="geo__text">
+                                    <p class="geo__item-name">Other</p>
+                                    <p class="geo__item-percent">1,37%</p>
+                                </div>
+                                <span class="geo__progress geo__progress--other"></span>
+                        </div>
+                        <!-- <img src="src/img/icons/content/geo.png" alt="" class="geo__img"> -->
                     </div>
                 </div>
             </div>     
