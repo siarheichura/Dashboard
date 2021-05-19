@@ -27,10 +27,8 @@
     }
 
     &__body {
-        display: flex;
+        @include flex;
         flex-flow: row wrap;
-        justify-content: space-between;
-        align-content: space-between;
     }
 
     &__item {
@@ -66,27 +64,27 @@
         }
 
         &--russia:before {
-            width: 91.42%
+            width: 91%;
         }
 
         &--china:before {
-            width: 9.28%
+            width: 9%;
         }
 
         &--ukraine:before {
-            width: 3.57%           
+            width: 3.5%;         
         }
 
         &--usa:before {
-            width: 3.57%
+            width: 3.5%;
         }
 
         &--mongolia:before {
-            width: 2.85%
+            width: 3%;
         }
                 
         &--other:before {
-            width: 10.71% 
+            width: 11%;
         } 
     }
 }

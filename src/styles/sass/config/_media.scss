@@ -1,9 +1,18 @@
+@media screen and (max-width: 1500px) {
+    .wrapper {
+        padding: 0;
+    }
+
+    .app:before,
+    .app:after {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .content {
-        // display: grid;
         grid-template-columns: repeat(21, 1fr);
         grid-template-rows: repeat(3, 148px) repeat(2, 242px);
-        // grid-gap: 32px;
     }
 
     .people {
@@ -119,15 +128,14 @@
 
     .header {
         flex-direction: column;
+        align-items: flex-end;
 
         &__heading {
+            margin-bottom: 18px;
             width: 100%;
-            order: 1;
-        }
+        }       
 
         &__user {
-            width: 100%;
-            justify-content: flex-end;
             margin-bottom: 10px;
 
             &:after {

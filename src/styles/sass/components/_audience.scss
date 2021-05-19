@@ -27,23 +27,41 @@
         }
     }
 
-    .checkbox-group {
-        @include flex;
-
-        &__check {
-            height: 16px;
-            width: 16px;
-            margin-right: 5px;
-        }
-
-        &__name {
-            margin-right: 10px;
-            font-size: 12px;
-            font-weight: 300px;
-        }
+    &__checkbox {
+        position: relative;
+        display: block;
     }
 
-    .audience__img {
+    &__check {
+        display: none;
+    }
+
+    i {
+        position: absolute;
+        top: 0;
+        left: -20px;
+        width: 16px;
+        height: 16px;
+        border: 1.5px solid $violet-color;
+        border-radius: 5px;
+    }
+
+    &__checkbox-name {
+        margin-right: 10px;
+        font-size: 12px;
+        font-weight: $regular-text;
+    }
+
+    &__check:checked ~ i {
+        background: url(../../img/icons/content/checkbox.png) no-repeat center center;
+    }
+
+    &__checkbox-group {
+        @include flex;
+        width: 115px;
+    }
+
+    &__img {
         justify-self: center;
     }
 }

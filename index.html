@@ -75,7 +75,6 @@
                     <span class="menu-btn__burger"></span>
                 </div>
             </nav>
-
             <div class="main">
                 <header class="header">
                     <div class="header__heading">
@@ -92,7 +91,6 @@
                         <img src="src/img/icons/header/avatar.svg" alt="users avatar" class="header__avatar">
                     </div>
                 </header>
-
                 <div class="content">
                     <div class="people">
                         <h2 class="people__title">Friends</h2>
@@ -113,12 +111,18 @@
                         <div class="audience__heading">
                             <h2 class="audience__title">Audience reach</h2>
                             <p class="audience__date">31/01/2020 – 06/02/2020</p>
-                            <label class="checkbox-group">
-                                <input type="checkbox" checked class="checkbox-group__check">
-                                <span class="checkbox-group__name">Total</span>
-                                <input type="checkbox" class="checkbox-group__check">
-                                <span class="checkbox-group__name">Follower</span>
-                            </label>
+                            <div class="audience__checkbox-group">
+                                <label class="audience__checkbox">
+                                    <input type="checkbox" checked class="audience__check">
+                                    <i></i>
+                                    <span class="audience__checkbox-name">Total</span>
+                                </label>
+                                <label class="audience__checkbox">
+                                    <input type="checkbox" class="audience__check">
+                                    <i></i>
+                                    <span class="audience__checkbox-name">Follower</span>
+                                </label>
+                            </div>
                         </div>
                         <img src="src/img/icons/content/graph.png" alt="graph" class="audience__img">
                     </div>
@@ -188,8 +192,8 @@
                                     <p class="geo__item-percent">1,37%</p>
                                 </div>
                                 <span class="geo__progress geo__progress--other"></span>
+                            </div>
                         </div>
-                        <!-- <img src="src/img/icons/content/geo.png" alt="" class="geo__img"> -->
                     </div>
                 </div>
             </div>     
