@@ -1,5 +1,6 @@
 ***
-[SEE APP](https://siarheichura.github.io/Dashboard/)
+[Watch it](https://siarheichura.github.io/Dashboard/)
 
-This app made using **GRID** and **FLEXBOX** through the **SASS** preprocessor according to the **BEM** methodology.
+This app was made using **GRID** and **FLEXBOX** models through the **SASS** preprocessor according to the **BEM** methodology.
 ***
+![Screenshot](https://github.com/siarheichura/images/blob/master/Dashboard.png)
